@@ -133,7 +133,9 @@ namespace task_1
             double.TryParse(Console.ReadLine(), out c);
             double.TryParse(Console.ReadLine(), out d);
             double.TryParse(Console.ReadLine(), out e);
-
+			
+			//ЗАКОММЕНТИРОВАННОЕ ПЕРЕПИСАТЬ ПОД ПВП
+			/*
             if ((a >= b) & (a >= c) & (a >= d) & (a >= e))
                 Console.WriteLine("Максимальное значение из 5 введенных чисел = " + a);
             else
@@ -153,6 +155,9 @@ namespace task_1
                     }
                 }
             }
+			*/
+			//ЗАКОММЕНТИРОВАННОЕ ПЕРЕПИСАТЬ ПОД ПВП
+			
             Console.ReadKey(true);
         }
     }
