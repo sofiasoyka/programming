@@ -43,7 +43,7 @@ namespace task_1
             double.TryParse(Console.ReadLine(), out floor);
             Console.WriteLine("Введите делимое для нахождения остатка разности двух чисел.");
             double.TryParse(Console.ReadLine(), out ieee_remainder_1);
-            Console.WriteLine("Введите делимое для нахождения остатка разности двух чисел.");
+            Console.WriteLine("Введите делитель для нахождения остатка разности двух чисел.");
             double.TryParse(Console.ReadLine(), out ieee_remainder_2);
             Console.WriteLine("Введите число для нахождения его логарифма по введенному основанию.");
             double.TryParse(Console.ReadLine(), out log_number);
@@ -134,25 +134,8 @@ namespace task_1
             double.TryParse(Console.ReadLine(), out d);
             double.TryParse(Console.ReadLine(), out e);
 
-            if ((a >= b) & (a >= c) & (a >= d) & (a >= e))
-                Console.WriteLine("Максимальное значение из 5 введенных чисел = " + a);
-            else
-            {
-                if ((b >= a) & (b >= c) & (b >= d) & (b >= e))
-                    Console.WriteLine("Максимальное значение из 5 введенных чисел = " + b);
-                else
-                {
-                    if ((c >= a) & (c >= b) & (c >= d) & (c >= e))
-                        Console.WriteLine("Максимальное значение из 5 введенных чисел = " + c);
-                    else
-                    {
-                        if ((d >= a) & (d >= b) & (d >= c) & (d >= e))
-                            Console.WriteLine("Максимальное значение из 5 введенных чисел = " + d);
-                        else
-                            Console.WriteLine("Максимальное значение из 5 введенных чисел = " + e);
-                    }
-                }
-            }
+            double max = Math.Max(Math.Max(Math.Max(Math.Max(a, b), c), d), e);
+            Console.Write("Максимальное число из " + a + ", " + b + ", " + c + ", " + d + ", " + e + ": " + max);
             Console.ReadKey(true);
         }
     }
