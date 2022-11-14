@@ -133,9 +133,37 @@ namespace task_1
             double.TryParse(Console.ReadLine(), out c);
             double.TryParse(Console.ReadLine(), out d);
             double.TryParse(Console.ReadLine(), out e);
+<<<<<<< HEAD
 
             double max = Math.Max(Math.Max(Math.Max(Math.Max(a, b), c), d), e);
             Console.Write("Максимальное число из " + a + ", " + b + ", " + c + ", " + d + ", " + e + ": " + max);
+=======
+			
+			//ЗАКОММЕНТИРОВАННОЕ ПЕРЕПИСАТЬ ПОД ПВП
+			/*
+            if ((a >= b) & (a >= c) & (a >= d) & (a >= e))
+                Console.WriteLine("Максимальное значение из 5 введенных чисел = " + a);
+            else
+            {
+                if ((b >= a) & (b >= c) & (b >= d) & (b >= e))
+                    Console.WriteLine("Максимальное значение из 5 введенных чисел = " + b);
+                else
+                {
+                    if ((c >= a) & (c >= b) & (c >= d) & (c >= e))
+                        Console.WriteLine("Максимальное значение из 5 введенных чисел = " + c);
+                    else
+                    {
+                        if ((d >= a) & (d >= b) & (d >= c) & (d >= e))
+                            Console.WriteLine("Максимальное значение из 5 введенных чисел = " + d);
+                        else
+                            Console.WriteLine("Максимальное значение из 5 введенных чисел = " + e);
+                    }
+                }
+            }
+			*/
+			//ЗАКОММЕНТИРОВАННОЕ ПЕРЕПИСАТЬ ПОД ПВП
+			
+>>>>>>> aa6b96e74600a4d1ebefebcb1471363701ab57a5
             Console.ReadKey(true);
         }
     }
