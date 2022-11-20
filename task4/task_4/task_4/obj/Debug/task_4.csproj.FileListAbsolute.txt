@@ -4,3 +4,9 @@ C:\Users\student\Desktop\ТУУ-111\task_4\task_4\bin\Debug\task_4.exe
 C:\Users\student\Desktop\ТУУ-111\task_4\task_4\bin\Debug\task_4.pdb
 C:\Users\student\Desktop\ТУУ-111\task_4\task_4\obj\Debug\task_4.exe
 C:\Users\student\Desktop\ТУУ-111\task_4\task_4\obj\Debug\task_4.pdb
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task4\task_4\task_4\bin\Debug\task_4.exe
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task4\task_4\task_4\bin\Debug\task_4.pdb
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task4\task_4\task_4\obj\Debug\task_4.csproj.AssemblyReference.cache
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task4\task_4\task_4\obj\Debug\task_4.csproj.CoreCompileInputs.cache
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task4\task_4\task_4\obj\Debug\task_4.exe
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task4\task_4\task_4\obj\Debug\task_4.pdb

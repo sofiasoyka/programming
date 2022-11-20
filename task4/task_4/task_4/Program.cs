@@ -6,12 +6,12 @@ namespace task_4
     {
         static void Main(string[] args)
         {
-            double a, b, c, D, x1, x2;
-            double eps = 0.001;
             /* D - дискриминант
             x1 - первый корень уравнения
             x2 - второй корень уравнения */
-
+            double a, b, c, D, x1, x2;
+            double eps = 0.001;
+            
             Console.WriteLine("Введите значение коэффициента при x в квадрате");
             double.TryParse(Console.ReadLine(), out a);
             Console.WriteLine("Введите значение коэффициента при x");
@@ -19,35 +19,26 @@ namespace task_4
             Console.WriteLine("Введите значение свободного члена");
             double.TryParse(Console.ReadLine(), out c);
 
-            if (Math.Abs(a) <= eps)
+            D = b * b - 4 * a * c;
+
+            if (Math.Abs(D) <= 0)
             {
-                x1 = -c / b;
+                x1 = (-b) / (2 * a);
                 Console.WriteLine("Корень уравнения = " + x1);
             }
 
             else
             {
-                D = b * b - 4 * a * c;
-                if (D == 0)
+                if (D > eps)
                 {
-                    x1 = (-b) / (2 * a);
-                    Console.WriteLine("Корень уравнения = " + x1);
+                    x1 = (-b + Math.Sqrt(D)) / (2 * a);
+                    x2 = (-b - Math.Sqrt(D)) / (2 * a);
+                    Console.WriteLine("Первый корень уравнения = " + x1);
+                    Console.WriteLine("Второй корень уравнения = " + x2);
                 }
-
                 else
-                {
-                    if (D > eps)
-                    {
-                        x1 = (-b + Math.Sqrt(D)) / (2 * a);
-                        x2 = (-b - Math.Sqrt(D)) / (2 * a);
-                        Console.WriteLine("Первый корень уравнения = " + x1);
-                        Console.WriteLine("Второй корень уравнения = " + x2);
-                    }
-                    else
-                        Console.WriteLine("Нет корней");
-
-                }
-            }  
+                    Console.WriteLine("Нет корней");
+            }
             Console.ReadKey();
         }
     }
