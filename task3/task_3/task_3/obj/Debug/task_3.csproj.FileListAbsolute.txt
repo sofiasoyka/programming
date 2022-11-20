@@ -1,0 +1,12 @@
+C:\Users\student\Desktop\ТУУ-111\task_3\task_3\obj\Debug\task_3.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\ТУУ-111\task_3\task_3\obj\Debug\task_3.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\ТУУ-111\task_3\task_3\bin\Debug\task_3.exe
+C:\Users\student\Desktop\ТУУ-111\task_3\task_3\bin\Debug\task_3.pdb
+C:\Users\student\Desktop\ТУУ-111\task_3\task_3\obj\Debug\task_3.exe
+C:\Users\student\Desktop\ТУУ-111\task_3\task_3\obj\Debug\task_3.pdb
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task3\task_3\task_3\bin\Debug\task_3.exe
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task3\task_3\task_3\bin\Debug\task_3.pdb
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task3\task_3\task_3\obj\Debug\task_3.csproj.AssemblyReference.cache
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task3\task_3\task_3\obj\Debug\task_3.csproj.CoreCompileInputs.cache
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task3\task_3\task_3\obj\Debug\task_3.exe
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task3\task_3\task_3\obj\Debug\task_3.pdb
