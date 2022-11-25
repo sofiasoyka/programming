@@ -26,13 +26,13 @@ namespace task_4
                 x1 = (-b) / (2 * a);
                 Console.WriteLine("Корень уравнения = " + x1);
             }
-
             else
             {
                 if (D > eps)
                 {
                     x1 = (-b + Math.Sqrt(D)) / (2 * a);
                     x2 = (-b - Math.Sqrt(D)) / (2 * a);
+
                     Console.WriteLine("Первый корень уравнения = " + x1);
                     Console.WriteLine("Второй корень уравнения = " + x2);
                 }
