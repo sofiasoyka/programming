@@ -8,8 +8,9 @@ namespace task_7
         {
             int n;
             double w, x, F, F1; // F1 - вспомогательная переменная для счета F
+            double eps = 0.001;
 
-            Console.WriteLine("Введите количество эелементов ряда");
+            Console.WriteLine("Введите количество элементов ряда");
             int.TryParse(Console.ReadLine(), out n);
             Console.WriteLine("Введите значение переменной w");
             double.TryParse(Console.ReadLine(), out w);
@@ -21,7 +22,6 @@ namespace task_7
                 F = (0.5 * w + Math.Sqrt(x * x + 5)) / (Math.Sin(1 * 2 * 3 * 4) + 3);
                 Console.WriteLine("Значение F = " + F);
             }
-
             else
             {
                 // переменные в выражении
@@ -54,11 +54,12 @@ namespace task_7
                     k4 += 1;
                     v5 += 3;
                 }
-
-                Console.WriteLine("Значение F = " + F);
+                if (Math.Abs(F) >= eps)
+                    Console.WriteLine("Значение F = " + F);
+                else
+                    Console.WriteLine("Значение F = 0");
             }
             Console.ReadKey();
         }
-
     }
 }

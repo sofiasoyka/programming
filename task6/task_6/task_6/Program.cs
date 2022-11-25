@@ -23,14 +23,15 @@ namespace task_6
             for (double i = b_0; b_0 <= b_k;)
             {
                 if ((Math.Abs(b_0 * b_0 - x) <= eps) ^ (Math.Abs(Math.Exp(a) + b_0) <= eps))
-                    Console.WriteLine("При b = {0}, значение G невозможно вычислить", b_0);
+                    Console.WriteLine("При b = " + b_0 + ", значение G невозможно вычислить");
                 else
                 {
                     G = (2.4 * Math.Cos(Math.Pow(a, 3) + Math.Pow(b_0, a)) + Math.Pow(b_0 * b_0 - x, 1 / 3)) / (Math.Exp(a) + b_0);
+
                     if (Math.Abs(G) <= eps)
-                        Console.WriteLine("При b = {0}, значение G = 0", b_0);
+                        Console.WriteLine("При b = " + b_0 + ", значение G = 0");
                     else
-                        Console.WriteLine("При b = {0}, значение G = {1}", b_0, G);
+                        Console.WriteLine("При b = " + b_0 + ", значение G = " + G);
                 }
                 b_0 += delta_b;
             }
