@@ -8,6 +8,7 @@ namespace task_5
         {
             Console.WriteLine("Введите код операции (от 0 до 3)");
             byte.TryParse(Console.ReadLine(), out byte s); // вводимый код операции
+
             switch(s)
             {
                 case 0:
