@@ -38,6 +38,7 @@ namespace task_3
                 Console.WriteLine("Значение выражения = " + (Math.Cos(u) - u) / (u * u + n));
             else
                 Console.WriteLine("Делить на ноль нельзя");
+
             Console.ReadKey();
         }
     }

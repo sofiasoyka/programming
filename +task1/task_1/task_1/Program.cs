@@ -136,7 +136,8 @@ namespace task_1
 
             double max = Math.Max(Math.Max(Math.Max(Math.Max(a, b), c), d), e);
             Console.Write("Максимальное число из " + a + ", " + b + ", " + c + ", " + d + ", " + e + ": " + max);
-            Console.ReadKey(true);
+
+            Console.ReadKey();
         }
     }
 }
