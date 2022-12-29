@@ -40,24 +40,29 @@ namespace task_7
 
                 int k4 = 5; // вспомогательная переменная для v4
 
-                for (int i = 1; i <= n; i++)
-                {
-                    F1 = (v1 * w + Math.Sqrt(v2 + v3)) / (Math.Sin(v4) + v5);
-                    F += F1;
-                    v1 += 0.2;
-                    v2 = Math.Pow(x, k2);
-                    k2 = k2_1 * k2_2;
-                    k2_1 = k2 / k2_1;
-                    k2_2 = k2;
-                    v3 += 5;
-                    v4 *= k4;
-                    k4 += 1;
-                    v5 += 3;
-                }
-                if (Math.Abs(F) >= eps)
-                    Console.WriteLine("Значение F = " + F);
+                if (Math.Pow(x, 3) + 10 < -0.001)
+                    Console.WriteLine("Невозможно вычислить F - под корнем отрицательное число");
                 else
-                    Console.WriteLine("Значение F = 0");
+                {
+                    for (int i = 1; i <= n; i++)
+                    {
+                        F1 = (v1 * w + Math.Sqrt(v2 + v3)) / (Math.Sin(v4) + v5);
+                        F += F1;
+                        v1 += 0.2;
+                        v2 = Math.Pow(x, k2);
+                        k2 = k2_1 * k2_2;
+                        k2_1 = k2 / k2_1;
+                        k2_2 = k2;
+                        v3 += 5;
+                        v4 *= k4;
+                        k4 += 1;
+                        v5 += 3;
+                    }
+                    if (Math.Abs(F) >= eps)
+                        Console.WriteLine("Значение F = " + F);
+                    else
+                        Console.WriteLine("Значение F = 0");
+                }
             }
             Console.ReadKey();
         }
