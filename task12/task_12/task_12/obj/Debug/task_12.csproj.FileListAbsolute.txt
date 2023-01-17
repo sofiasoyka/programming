@@ -1,0 +1,8 @@
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task12\task_12\task_12\bin\Debug\task_12.exe.config
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task12\task_12\task_12\bin\Debug\task_12.exe
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task12\task_12\task_12\bin\Debug\task_12.pdb
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task12\task_12\task_12\obj\Debug\task_12.csproj.AssemblyReference.cache
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task12\task_12\task_12\obj\Debug\task_12.csproj.SuggestedBindingRedirects.cache
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task12\task_12\task_12\obj\Debug\task_12.csproj.CoreCompileInputs.cache
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task12\task_12\task_12\obj\Debug\task_12.exe
+C:\Users\sofiasoyka\Desktop\файлы\вуз\Сафронов\прога\task12\task_12\task_12\obj\Debug\task_12.pdb

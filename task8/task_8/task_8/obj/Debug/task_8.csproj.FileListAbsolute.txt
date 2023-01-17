@@ -1,8 +1,0 @@
-C:\Users\sofia\Desktop\Файлы\вуз\Сафронов\прога\task8\task_8\task_8\bin\Debug\task_8.exe.config
-C:\Users\sofia\Desktop\Файлы\вуз\Сафронов\прога\task8\task_8\task_8\bin\Debug\task_8.exe
-C:\Users\sofia\Desktop\Файлы\вуз\Сафронов\прога\task8\task_8\task_8\bin\Debug\task_8.pdb
-C:\Users\sofia\Desktop\Файлы\вуз\Сафронов\прога\task8\task_8\task_8\obj\Debug\task_8.csproj.AssemblyReference.cache
-C:\Users\sofia\Desktop\Файлы\вуз\Сафронов\прога\task8\task_8\task_8\obj\Debug\task_8.csproj.SuggestedBindingRedirects.cache
-C:\Users\sofia\Desktop\Файлы\вуз\Сафронов\прога\task8\task_8\task_8\obj\Debug\task_8.csproj.CoreCompileInputs.cache
-C:\Users\sofia\Desktop\Файлы\вуз\Сафронов\прога\task8\task_8\task_8\obj\Debug\task_8.exe
-C:\Users\sofia\Desktop\Файлы\вуз\Сафронов\прога\task8\task_8\task_8\obj\Debug\task_8.pdb
