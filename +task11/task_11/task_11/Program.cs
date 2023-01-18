@@ -5,32 +5,31 @@ namespace task_11
     internal class Program
     {
         // увеличивает/уменьшает размерность одномерного массива на 1
-        static string ChangeDementionOfArray(double[] array, bool flag)
+        static double[] ChangeDementionOfArray(double[] array, bool flag)
         {
-            Console.Write("\nМассив с измененной размерностью:  ");
-
             // увеличивает размерность массива на 1
             if (flag)
             {
-                
+                double[] modified_array = new double[array.Length + 1];
+
                 for (int i = 0; i < array.Length; i++)
-                {
-                    array[i]++;
-                    Console.Write(array[i] + "  ");
-                }
+                    modified_array[i] = array[i];
+
+                modified_array[array.Length] = 0;
+
+                return modified_array;
             }
 
             // уменьшает размерность массива на 1
             else
             {
+                double[] modified_array = new double[array.Length - 1];
 
-                for (int i = 0; i < array.Length; i++)
-                {
-                    array[i]--;
-                    Console.Write(array[i] + "  ");
-                }
+                for (int i = 0; i < array.Length - 1; i++)
+                    modified_array[i] = array[i];
+
+                return modified_array;
             }
-            return "\n";
         }
         static void Main()
         {
@@ -67,8 +66,12 @@ namespace task_11
                 Console.WriteLine("\nЧтобы получить результат, нажмите Enter");
                 Console.ReadKey();
 
-                ChangeDementionOfArray(array, flag);
-                
+                double[] modified_array = ChangeDementionOfArray(array, flag);
+
+                Console.Write("\nМассив с измененной размерностью:  ");
+                for (int i = 0; i < modified_array.Length; i++)
+                    Console.Write(modified_array[i] + "  ");
+
                 Console.WriteLine();
                 Console.ReadKey();
             }

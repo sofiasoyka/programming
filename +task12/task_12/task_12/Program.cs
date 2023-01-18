@@ -9,40 +9,48 @@ namespace task_12
         {
             int tmp;
 
-            // по возрастанию
+            // возрастание
             if (flag)
             {
                 for (int i = 0; i < array.GetLength(0); i++)
                 {
-                    for (int run = 0; run < array.GetLength(1) - 1; run++)
+                    for (int j = 0; j < array.GetLength(1); j++)
                     {
-                        for (int j = 0; j < array.GetLength(1) - 1; j++)
+                        for (int i2 = i; i2 < array.GetLength(0); i2++)
                         {
-                            if (array[i, j] > array[i, j + 1])
+                            //тернарное условие позволяет избежать ситуации проверки уже проверенных значений
+                            //позволяет избежать плохих ситуаций при одинаковых числах
+                            for (int j2 = ((i2 == i) ? j : 0); j2 < array.GetLength(1); j2++)
                             {
-                                tmp = array[i, j];
-                                array[i, j] = array[i, j + 1];
-                                array[i, j + 1] = tmp;
+                                if (array[i, j] > array[i2, j2])
+                                {
+                                    tmp = array[i2, j2];
+                                    array[i2, j2] = array[i, j];
+                                    array[i, j] = tmp;
+                                }
                             }
                         }
                     }
                 }
             }
 
-            // по убыванию
+            //убывание
             else
             {
                 for (int i = 0; i < array.GetLength(0); i++)
                 {
-                    for (int run = 0; run < array.GetLength(1) - 1; run++)
+                    for (int j = 0; j < array.GetLength(1); j++)
                     {
-                        for (int j = 0; j < array.GetLength(1) - 1; j++)
+                        for (int i2 = i; i2 < array.GetLength(0); i2++)
                         {
-                            if (array[i, j] < array[i, j + 1])
+                            for (int j2 = ((i2 == i) ? j : 0); j2 < array.GetLength(1); j2++)
                             {
-                                tmp = array[i, j];
-                                array[i, j] = array[i, j + 1];
-                                array[i, j + 1] = tmp;
+                                if (array[i, j] < array[i2, j2])
+                                {
+                                    tmp = array[i2, j2];
+                                    array[i2, j2] = array[i, j];
+                                    array[i, j] = tmp;
+                                }
                             }
                         }
                     }
@@ -62,7 +70,7 @@ namespace task_12
 
             for (int i = 0; i < S; i++)
             {
-                for(int j = 0; j < C; j++)
+                for (int j = 0; j < C; j++)
                 {
                     Console.Write($"Введите {j + 1} - й элемент {i + 1} - й строки: ");
                     array[i, j] = Convert.ToInt32(Console.ReadLine());
